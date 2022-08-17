@@ -7,6 +7,6 @@ int main(){
 		else
 			sum+=count;
 	}
-	// continue 일때는 ㄴㄴ이므로 짝수 말고 홀수일때 sum
+	// continue 일때는 ㄴㄴ이므로 짝수 말고 홀수일때 sum 
 	printf("%d\n",sum);
 }
