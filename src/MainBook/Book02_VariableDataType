@@ -1,0 +1,68 @@
+1. 자료형
+ [1] 개념 
+  - 변수 선언시 어떤 종류의 변수인지 정해줌
+  - 저장되는 데이터의 종류에 따른 형태
+  - 효율적인 메모리 사용을 위해 여러종류의 자료형 존재
+  
+  [2] C언어 자료형
+   	(1) 문자형
+   	 - char : 1byte 
+   	 - unsigend char : 1byte
+   	(2) 정수형
+   	 - short: 2byte
+   	 - int: 4byte
+   	 - long: 4byte
+   	 - long ling: 8byte
+   	(3) 실수형
+   	 - float: 4byte
+   	 - double: 8byte
+   	 - long double: 8byte
+   	 
+2. 변수
+ [1] 개념
+  - 데이터를 저장할수 있는 메모리의 기억공간
+ [2] 종류
+ 	(1) 지역변수 (local)
+ 	 - 중괄호 내부, 함수의 매개변수에서 사용되는 변수
+ 	 - 함수가 종료되거나 중괄호 벗어나면 소멸
+ 	 - 초기값 지정 안하면 컴파일 에러 혹은 쓰렉값 저장
+ 	 - 스택 영역에 저장
+ 	(2) 전역변수 (global variable)
+ 	 - 어느 범위에서든 참조 가능
+ 	 - 전처리기 밑에 선언, 모든 함수에서 공통사용
+ 	 - 초기값 지정안하면 0으로 자동
+ 	 - 프로그램 종료전엔 메모리에서 소멸 X
+ 	 - 지역변수와 다르게, 데이터 영역에 저장
+ 	(3) 정적변수 (static variable)
+ 	 - 지역변수와 전역변수의 특징이 있다
+ 	 - 함수를 벗어나도 변수가 사라지지않고 유지
+ 	 - 초기값 지정안하면 0으로 자동
+ 	 - 프로그램 종료전엔 메모리에서 소멸 X
+ 	 - 지역변수와 다르게, 데이터 영역에 저장 
+ 	(4) 동적변수 (dynamic variable)
+ 	 - 프로그램 수행도중 메모리 공간 확보
+ 	 - malloc 함수 이용
+ 	 - 힙(heap)영역에 저장
+ 	(5) 외부변수 (extern )
+ 	 - 외부파일에서 선언된 변수 참조함
+ 	 - extern 키워드를 붙여 사용하며, 다른파일에 있는 전역변수 참조
+ 	(6) 레지스터 변수 
+ 	 - cpu내부의 레지스터에 변수를 할당하기 위해서는 자료형 앞에 register를 붙여줌
+ [3] 변수생성 규칙및 특징
+ 	- 예약어(키워드) 사용x
+ 	- 공백 x
+ 	- 첫글자: 영문,언더바 oo
+ 	- 특문: 언더바 제외 꺼져
+ 	- 대소문자 구분 
+ [4] 변수의 선언 
+ 	- 맨 위 전역변수
+ 	- static 정적변수 ㅇㅇ
+ [5] c언어 예약어
+ 	(1) 자료형 : char, int, float, double, short, long, 
+ 				signed,unsigned,enum,void,struct,union
+ 	(2) 기억분류: auto,register,static,extern
+ 	(3) 제어문: if,else,  do,while,  for,switch,case
+ 				break,continue,return,  default,  goto
+ 	(4) 기타 : sizeof, const, volatile
+ 	
+ 	
